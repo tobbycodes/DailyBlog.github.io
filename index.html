@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css">
+  <title>Display and Input Posts</title>
+</head>
+  <div id="login-section">
+    <input type="text" id="username" placeholder="Enter username">
+    <button id="loginBtn">Login</button>
+  </div>
+  <div id="posts-container"></div>
+
+  <form id="post-form">
+    <label for="title">Title:</label><br>
+    <input type="text" id="title" name="title" required><br>
+    <label for="content">Content:</label><br>
+    <textarea id="content" name="content" required></textarea><br><br>
+
+    <label for="imageUpload">Upload Image:</label><br>
+    <input type="file" id="imageUpload" accept="image/*"><br><br>
+
+    <button type="submit">Add Post</button>
+  </form>
+  <script src="script.js"></script>
+</body>
+</html>
